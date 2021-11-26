@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    font-size: 16px;
+}
+.todo-title {
+    margin-top: 50px;
+    text-align: center;
+}
+.todo-app-container {
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.todo-app-container .add-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.todo-app-container .add-box input {
+    width: 70%;
+    height: 34px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    padding: 0 5px;
+}
+
+.todo-app-container .add-box button {
+    width: 20%;
+    height: 34px;
+}
+
+.todo-app-container .todo-body-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.todo-app-container .todo-list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-rows {
+    border: 1px solid dimgray;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+.todo-item input {
+    width: 15px;
+    height: 15px;
+}
+
+.todo-item button {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.todo-item .todo-item-text {
+    margin: 10px 10px;
+}
+
+.todo-done {
+    color: dimgray;
+    text-decoration: line-through;
+    line-height: 1.2rem;
 }
